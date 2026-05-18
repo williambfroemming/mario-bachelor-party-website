@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario's Bachelor Party — Las Vegas 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400;1,600&family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <span class="nav__logo">MG · 2026</span>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#famiglia">La Famiglia</a></li>
+        <li><a class="nav__link" href="#itinerary">Il Programma</a></li>
+      </ul>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a class="nav__mobile-link" href="#famiglia">La Famiglia</a>
+      <a class="nav__mobile-link" href="#itinerary">Il Programma</a>
+    </div>
+  </nav>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown" id="countdown">
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-days">--</span>
+      <span class="countdown__label">Days</span>
+    </div>
+    <span class="countdown__sep">✦</span>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-hours">--</span>
+      <span class="countdown__label">Hours</span>
+    </div>
+    <span class="countdown__sep">✦</span>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-minutes">--</span>
+      <span class="countdown__label">Minutes</span>
+    </div>
+    <span class="countdown__sep">✦</span>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-seconds">--</span>
+      <span class="countdown__label">Seconds</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__quote">
+        "You probably get this a lot.<br />
+        This isn't the real Caesar's Palace, is it?"
+      </p>
+      <div class="hero__divider">
+        <span class="hero__divider-line"></span>
+        <span class="hero__divider-ornament">✦</span>
+        <span class="hero__divider-line"></span>
+      </div>
+      <h1 class="hero__title">Mario's Bachelor Party</h1>
+      <p class="hero__date">Las Vegas &nbsp;·&nbsp; September 11&ndash;14, 2026</p>
+    </div>
+    <div class="hero__skyline"></div>
+  </section>
+
+  <!-- LA FAMIGLIA -->
+  <section class="famiglia" id="famiglia">
+    <div class="container">
+      <h2 class="section-title">La Famiglia</h2>
+      <p class="section-subtitle">The squad making it happen</p>
+
+      <!-- Groom featured -->
+      <div class="famiglia__groom-row">
+        <div class="famiglia__card famiglia__card--groom is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/mario.jpg" alt="Mario Guagliardo" loading="lazy" />
+                <span class="famiglia__badge">Il Padrino</span>
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Mario Guagliardo</p>
+                <p class="famiglia__role">The Groom</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Mario Guagliardo</p>
+                <p class="card__back-epithet">The Italian Stallion</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">The man of the hour. The reason we are all descending upon Las Vegas for a weekend that will not be forgotten. Enough said.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rest of the crew -->
+      <div class="famiglia__grid">
+
+        <!-- Adam Howaniec — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/adam.jpg" alt="Adam Howaniec" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Adam Howaniec</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Adam Howaniec</p>
+                <p class="card__back-epithet">The Cincinnati Streak</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">Cincinnati's most dangerous export. On the mountain he's a streak of lightning. Blink and he's already at the bottom, three drinks deep into après ski, wondering what took you so long.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alex Slepian — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/alex.jpg" alt="Alex Slepian" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Alex Slepian</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Alex Slepian</p>
+                <p class="card__back-epithet">The King of New York</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">Keeps the city's biggest organizations safe from threats they don't even know exist, including zero-day vulnerabilities most people can't even pronounce. Want to travel somewhere? Alex has already been there. Need a reservation? Consider it done.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bill Froemming — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/bill.jpg" alt="Bill Froemming" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Bill Froemming</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Bill Froemming</p>
+                <p class="card__back-epithet">The Consigliere</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">Silicon Valley's most prolific agentic AI auditing expert. Once Bill gets going, you can't stop him. Like a slot machine that hit jackpot and never stopped spinning. Vegas doesn't know what's coming.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drew Reichenbach — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/drew.JPG" alt="Drew Reichenbach" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Drew Reichenbach</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Drew Reichenbach</p>
+                <p class="card__back-epithet">The Brooklyn Blur</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">Closes nine-figure M&amp;A deals before lunch, then outruns the whole borough by sunset. They say you can't see him coming. Just like his offers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hassan Saab — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/hassan.jpg" alt="Hassan Saab" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Hassan Saab</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Hassan Saab</p>
+                <p class="card__back-epithet">Guapi Papi</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">Forward deployed engineer by day. By night, he becomes Guapi Papi: DJ, smoke machine, and honorary Colombian national. The family's international man of mystery, and he never misses a drop.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pietro Conte — flip -->
+        <div class="famiglia__card is-flippable">
+          <div class="card__inner">
+            <div class="card__face card__face--front">
+              <div class="famiglia__photo-wrap">
+                <img src="images/pietro.jpg" alt="Pietro Conte" loading="lazy" />
+              </div>
+              <div class="famiglia__info">
+                <p class="famiglia__name">Pietro Conte</p>
+                <p class="famiglia__hint">Tap to reveal ✦</p>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card__back-content">
+                <p class="card__back-name">Pietro Conte</p>
+                <p class="card__back-epithet">The OG</p>
+                <div class="card__back-divider"></div>
+                <p class="card__back-bio">A true Italian OG from the formidable streets of Addison, Illinois. The longest-standing member of La Famiglia, he's known Mario before any of us. Currently the best-dressed man in Marina Del Rey, and it isn't close.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARY -->
+  <section class="itinerary" id="itinerary">
+    <div class="container">
+      <h2 class="section-title">Il Programma</h2>
+      <p class="section-subtitle">September 11&ndash;14, 2026 &nbsp;·&nbsp; Las Vegas</p>
+      <div class="itinerary__layout">
+
+        <div class="itinerary__timeline-wrap">
+          <ol class="timeline">
+            <li class="timeline__event timeline__event--confirmed">
+              <div class="timeline__node"></div>
+              <p class="timeline__date">September 11, 2026</p>
+              <p class="timeline__event-name">Check into Caesars Palace</p>
+              <p class="timeline__detail">Confirmed &mdash; Let's get into it.</p>
+            </li>
+            <li class="timeline__event timeline__event--tbd">
+              <div class="timeline__node"></div>
+              <p class="timeline__date">September 11, 2026 &mdash; Evening</p>
+              <p class="timeline__event-name">Dinner</p>
+              <p class="timeline__detail">TBD &mdash; Stay tuned.</p>
+            </li>
+            <li class="timeline__event timeline__event--tbd">
+              <div class="timeline__node"></div>
+              <p class="timeline__date">September 12, 2026 &mdash; Day</p>
+              <p class="timeline__event-name">Day Event</p>
+              <p class="timeline__detail">TBD &mdash; Stay tuned.</p>
+            </li>
+            <li class="timeline__event timeline__event--tbd">
+              <div class="timeline__node"></div>
+              <p class="timeline__date">September 13, 2026</p>
+              <p class="timeline__event-name">Football at the Sportsbook</p>
+              <p class="timeline__detail">TBD &mdash; Venue TBD.</p>
+            </li>
+            <li class="timeline__event timeline__event--hint">
+              <div class="timeline__node timeline__node--hint"></div>
+              <p class="timeline__event-name">More to come&hellip;</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="itinerary__map-col">
+          <div class="itinerary__map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=Caesars+Palace+Las+Vegas&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Caesars Palace Las Vegas"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="itinerary__map-label">Caesars Palace &mdash; Las Vegas, NV</p>
+          <a
+            class="itinerary__book-btn"
+            href="https://www.caesars.com/book/room-list?arrivalDate=09/11/2026&departureDate=09/14/2026&dateSearchFormat=exact-dates&propCode=clv"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Book Your Room</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__text">Vegas, September 2026 &nbsp;✦&nbsp; What happens here, stays here.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
