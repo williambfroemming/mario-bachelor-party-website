@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Logistica — Mario's Bachelor Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400;1,600&family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">MG · 2026</a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html#famiglia">La Famiglia</a></li>
+        <li><a class="nav__link" href="index.html#itinerary">Il Programma</a></li>
+        <li><a class="nav__link nav__link--active" href="logistica.html">La Logistica</a></li>
+      </ul>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a class="nav__mobile-link" href="index.html#famiglia">La Famiglia</a>
+      <a class="nav__mobile-link" href="index.html#itinerary">Il Programma</a>
+      <a class="nav__mobile-link" href="logistica.html">La Logistica</a>
+    </div>
+  </nav>
+
+  <!-- LA LOGISTICA -->
+  <section class="logistica">
+    <div class="container">
+      <h2 class="section-title">La Logistica</h2>
+      <p class="section-subtitle">Who's getting in when &nbsp;·&nbsp; Las Vegas (LAS)</p>
+
+      <!-- ARRIVALS -->
+      <div class="logistica__block">
+        <h3 class="logistica__heading">
+          <span class="logistica__heading-icon">↓</span> Arrivi &mdash; Touchdown in Vegas
+        </h3>
+        <div class="logistica__table-wrap">
+          <table class="flights">
+            <thead>
+              <tr>
+                <th>Family Member</th>
+                <th>From</th>
+                <th>Departs</th>
+                <th>To</th>
+                <th>Arrives</th>
+                <th>Flight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Family Member">Bill Froemming</td>
+                <td data-label="From">SFO</td>
+                <td data-label="Departs">Thu, Sep 10 &middot; 6:40 PM</td>
+                <td data-label="To">LAS</td>
+                <td data-label="Arrives">Thu, Sep 10 &middot; 8:26 PM</td>
+                <td data-label="Flight">
+                  <a class="flights__track" href="https://flightaware.com/live/flight/ASA776" target="_blank" rel="noopener noreferrer">Alaska 776 ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Family Member">Alex Slepian</td>
+                <td data-label="From">JFK</td>
+                <td data-label="Departs">Thu, Sep 10 &middot; 6:59 PM</td>
+                <td data-label="To">LAS</td>
+                <td data-label="Arrives">Thu, Sep 10 &middot; 9:56 PM</td>
+                <td data-label="Flight">
+                  <a class="flights__track" href="https://flightaware.com/live/flight/DAL568" target="_blank" rel="noopener noreferrer">Delta 568 ↗</a>
+                </td>
+              </tr>
+              <!-- Add more arrivals here, sorted by arrival time -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DEPARTURES -->
+      <div class="logistica__block">
+        <h3 class="logistica__heading">
+          <span class="logistica__heading-icon">↑</span> Partenze &mdash; Heading Home
+        </h3>
+        <div class="logistica__table-wrap">
+          <table class="flights">
+            <thead>
+              <tr>
+                <th>Family Member</th>
+                <th>From</th>
+                <th>Departs</th>
+                <th>To</th>
+                <th>Arrives</th>
+                <th>Flight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Family Member">Alex Slepian</td>
+                <td data-label="From">LAS</td>
+                <td data-label="Departs">Mon, Sep 14 &middot; 12:44 PM</td>
+                <td data-label="To">LAX</td>
+                <td data-label="Arrives">Mon, Sep 14 &middot; 2:02 PM</td>
+                <td data-label="Flight">
+                  <a class="flights__track" href="https://flightaware.com/live/flight/DAL1696" target="_blank" rel="noopener noreferrer">Delta 1696 ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Family Member">Bill Froemming</td>
+                <td data-label="From">LAS</td>
+                <td data-label="Departs">Mon, Sep 14 &middot; 3:39 PM</td>
+                <td data-label="To">SFO</td>
+                <td data-label="Arrives">Mon, Sep 14 &middot; 5:22 PM</td>
+                <td data-label="Flight">
+                  <a class="flights__track" href="https://flightaware.com/live/flight/ASA634" target="_blank" rel="noopener noreferrer">Alaska 634 ↗</a>
+                </td>
+              </tr>
+              <!-- Add more departures here, sorted by departure time -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="logistica__note">
+        Flight links open live tracking on FlightAware. &nbsp;Send Bill your details to get added.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__text">Vegas, September 2026 &nbsp;✦&nbsp; What happens here, stays here.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

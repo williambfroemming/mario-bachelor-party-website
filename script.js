@@ -75,6 +75,8 @@ function initCountdown() {
     seconds: document.getElementById('cd-seconds'),
   };
 
+  if (!els.days) return; // no countdown on this page
+
   function tick() {
     const diff = target - Date.now();
     if (diff <= 0) {
