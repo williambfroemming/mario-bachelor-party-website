@@ -672,6 +672,19 @@ img { display: block; max-width: 100%; }
   font-style: italic;
 }
 
+.timeline__detail a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-style: normal;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+  transition: color 0.2s var(--ease);
+}
+
+.timeline__detail a:hover {
+  color: var(--color-gold-pop);
+  border-bottom-color: var(--color-gold-pop);
+}
+
 /* Map */
 .itinerary__map-wrap {
   position: relative;
