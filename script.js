@@ -5,33 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardFlip();
   initHamburger();
   initCountdown();
-  initItineraryMap();
 });
-
-function initItineraryMap() {
-  const frame = document.querySelector('.itinerary__map-wrap iframe');
-  const label = document.querySelector('.itinerary__map-label');
-  if (!frame) return;
-
-  const events = document.querySelectorAll('.timeline__event[data-map]');
-  events.forEach(ev => {
-    ev.addEventListener('click', e => {
-      // Let real links (e.g. Event details) behave normally
-      if (e.target.closest('a')) return;
-
-      const query = ev.getAttribute('data-map');
-      const text = ev.getAttribute('data-label');
-      frame.src = `https://maps.google.com/maps?q=${encodeURIComponent(query)}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
-      if (text && label) label.textContent = text;
-
-      events.forEach(o => o.classList.remove('timeline__event--active'));
-      ev.classList.add('timeline__event--active');
-
-      // On narrow screens the map sits below the list — bring it into view
-      frame.closest('.itinerary__map-wrap').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    });
-  });
-}
 
 function initSmoothScroll() {
   const navHeight = document.getElementById('nav').offsetHeight;
