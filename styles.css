@@ -673,26 +673,16 @@ img { display: block; max-width: 100%; }
 }
 
 .timeline__detail a {
-  display: inline-block;
-  margin: 0.35rem 0.4rem 0 0;
-  padding: 0.4rem 0.8rem;
-  background: transparent;
-  border: 1px solid var(--color-gold);
-  border-radius: 1px;
   color: var(--color-gold);
-  font-family: var(--font-label);
-  font-size: 0.6rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
   text-decoration: none;
   font-style: normal;
-  white-space: nowrap;
-  transition: background 0.22s var(--ease), color 0.22s var(--ease);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+  transition: color 0.2s var(--ease);
 }
 
 .timeline__detail a:hover {
-  background: var(--color-gold);
-  color: var(--color-bg);
+  color: var(--color-gold-pop);
+  border-bottom-color: var(--color-gold-pop);
 }
 
 /* Map */
