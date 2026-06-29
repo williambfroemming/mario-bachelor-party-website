@@ -695,6 +695,43 @@ img { display: block; max-width: 100%; }
   color: var(--color-bg);
 }
 
+/* Clickable events drive the embedded map */
+.timeline__event[data-map] {
+  cursor: pointer;
+}
+
+.timeline__event[data-map]:hover .timeline__event-name {
+  color: var(--color-gold-pop);
+}
+
+.timeline__event--active .timeline__node {
+  box-shadow: 0 0 0 1px var(--color-gold), 0 0 0 5px rgba(201, 168, 76, 0.18);
+}
+
+.timeline__map-hint {
+  display: inline-block;
+  margin-top: 0.55rem;
+  font-family: var(--font-label);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.2s var(--ease);
+}
+
+.timeline__map-hint::before {
+  content: "\25C9\00A0\00A0";
+}
+
+.timeline__event[data-map]:hover .timeline__map-hint,
+.timeline__event--active .timeline__map-hint {
+  color: var(--color-gold);
+}
+
+.timeline__event--active .timeline__map-hint::after {
+  content: "\00A0\00A0\00B7\00A0\00A0Now showing";
+}
+
 /* Map */
 .itinerary__map-wrap {
   position: relative;
